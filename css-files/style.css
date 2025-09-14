@@ -47,8 +47,11 @@ body{
 }
 
 .bottom-menu .email-menu .login-menu .get-start{
-    height: 3.5vh;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5vh;
+    padding: 15px 25px;
     background-color: #ff0000;
     border-radius: 5px;
     color: white;
