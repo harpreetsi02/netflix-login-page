@@ -1,0 +1,321 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    /* <----- Navbar -----> */
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    .navbar img {
+      width: 120px;
+    }
+    .navbar .actions {
+      display: flex;
+      gap: 15px;
+    }
+    .navbar select, .navbar button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .navbar button {
+      background: red;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* <----- Hero Section -----> */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url("/images/IN-en-20250908-TRIFECTA-perspective_0647b106-80e1-4d25-9649-63099752b49a_large.jpg") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .email-form {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .email-form input {
+      padding: 12px;
+      width: 50%;
+      height: 60px;
+      border-radius: 5px;
+      border: 1px solid #626262;
+      background-color: #141414;
+      font-size: 16px;
+    }
+    .email-form button {
+      padding: 12px 20px;
+      border: none;
+      width: 28%;
+      font-weight: bold;
+      border-radius: 5px;
+      background: red;
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* <----- Trending Section -----> */
+    .trending {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .trending h2 {
+      margin-bottom: 20px;
+    }
+
+    .movies {
+      display: flex;
+      gap: 30px;
+      overflow-x: auto;
+    }
+
+    .movies img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    /* <----- Features Section -----> */
+
+    .feature-container h2{
+        padding: 0 150px;
+    }
+
+    .features{
+      display: flex;
+      padding: 20px 150px;
+      gap: 20px;
+    }
+
+    .feature {
+      background: linear-gradient(to bottom right, #1a1548, #111);
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+    }
+    .feature h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .feature p{
+        color: #bdbdbd;
+    }
+
+    /* <----- FAQ Section -----> */
+.faq-container{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.faq-container h1{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.faq-item{
+    border-bottom: 1px solid #1e1e1e;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.faq-question{
+    background-color: #2a2a2a;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 1s ease;
+}
+
+.faq-question:hover{
+    background-color: #414141;
+}
+
+.faq-question .arrow{
+    position: absolute;
+    right: 20px;
+    font-size: larger;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow{
+    transform: rotate(135deg);
+}
+
+.faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #222222;
+}
+
+.faq-answer p{
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+    /* <----- Footer -----> */
+
+/* <----- login menu -----> */
+.bottom-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    padding: 80px 150px;
+    gap: 50px;
+}
+
+.bottom-menu h4{
+    color: #fff;
+}
+
+.bottom-menu .email-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-menu .email-menu .login-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-menu .email-menu .login-menu input{
+    width: 35vw;
+    height: 50px;
+    padding: 10px;
+}
+
+.bottom-menu .email-menu .login-menu .get-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 15px 25px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    color: white;
+}
+
+.bottom-menu .email-menu .login-menu .get-start:hover{
+    background-color: #d00000;
+}
+
+/* <----- tag section -----> */
+.tag-sec{
+    color: #929292;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tag-sec .bottom-tags{
+    display: flex;
+    justify-content: left;
+    gap: 80px;
+}
+
+.tag-sec h4, a{
+    color: #929292;
+}
+
+.tag-sec .bottom-tags .line ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.tag-sec .bottom-tags .line ul li a{
+    text-decoration: none;
+    color: #929292;
+}
+
+.tag-sec .bottom-tags .line ul li a:hover{
+    text-decoration: underline;
+}
+
+.tag-sec .net-ind{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tag-sec .net-ind select{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #929292;
+    background-color: #151515;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tag-sec .net-ind p{
+    font-size: 14px;
+}
+
+.tag-sec .net-ind p a{
+    color: #1c82ff;
+}
